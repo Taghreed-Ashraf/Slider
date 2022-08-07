@@ -1,0 +1,64 @@
+.main-item {
+  border-radius: 10px;
+}
+
+.main-item .pic {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.item-caption {
+  width: 80%;
+  bottom: 20px;
+  left: 10%;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.main-item:hover .item-caption {
+  transform: scale(1.1);
+}
+
+.lightBox-Contaner {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.lightBox-item {
+  width: 40%;
+  height: 70%;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+#close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+i{
+  cursor: pointer;
+}
+
+@media screen and (max-width:568px)
+{
+  .lightBox-item {
+    width: 90%;
+    height: 50%;
+  }
+}
+
+@media screen and (min-width:569px) and (max-width:768px)
+{
+  .lightBox-item {
+    width: 80%;
+    height: 60%;
+  }
+}
+
